@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+h2, h3, h4 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    padding: 1rem;
+}
+
+header {
+width:max-content;
+max-width: 90%;
+margin: auto;
+background-image: url(../images/pasta_share.jpg);
+background-size: cover;
+text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: seashell;
+    text-shadow: 1px 1px black;
+}
+
+a:hover {
+    color: blanchedalmond;
+}
+
+figure {
+    max-width: 100%;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    font-style: italic;
+    color: gray;
+    font-size: .9rem;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: .5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .04rem;
+}
+
+main {
+    width: 90%;
+}
+
+section {
+    max-width: 100%;
+    position: relative;
+}
+
+section h2 {
+    box-sizing: border-box;
+    width: 100%;
+    border: 5px solid lightgray;
+    margin: 1rem 0;
+}
+
+footer {
+    position: relative;
+    top: 1rem;
+}
+
+/*WHY SECTION*/
+
+#why p {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    width: 200px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: seashell;
+}
+
+/*WHY NOT SECTION*/
+
+#why-not {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#why-not p {
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+    padding: .3rem;
+    
+}
+
+#why-not-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* PRETENDERS SECTION */
+
+#pretenders {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#pretenders-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box {
+    box-sizing: border-box;
+    padding: .25rem;
+    margin: .5rem;
+    width: 45%;
+    font-style: italic;
+    color: gray;
+}
+
+.box p {
+    margin: auto;
+    border-bottom: 1px solid black;
+    padding-bottom: .25rem;
+}
+
+.box img {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid black;
+    margin-bottom: .25;
+    width: 100%;
+}
+
+/* SHARE SECTION */
+
+#share-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+    text-shadow: 1px 1px lightgray;
+}
+
+#share-container p {
+    font-size: 1.1rem;
+    clear: both;
+}
+
+#share-container h3, #share-container p {
+    width: 100%;
+}
+
+#share-container > h3 {
+    padding: 2rem;
+}
+
+#penguin {
+    margin-top: 12rem;
+}
+
+#share-container img {
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 21%;
+    z-index: -1;
+}
+
+
+@media only screen and (max-width: 690px) {
+
+    #why {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #why p {
+        position: static;
+        font-size: 1rem;
+        color: black;
+        padding-bottom: .5rem;
+        width: 90%;
+    }
+
+    #why-not-container {
+        width: 90%;
+    }
+
+    .box {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    #penguin {
+        margin-top: 10rem;
+    }
+}
