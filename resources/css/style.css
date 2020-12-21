@@ -14,6 +14,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 800px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -89,7 +90,7 @@ section h2 {
     box-sizing: border-box;
     width: 100%;
     border: 5px solid lightgray;
-    margin: 1rem 0;
+    margin: 2rem 0 1rem 0;
 }
 
 footer {
@@ -117,13 +118,16 @@ footer {
     flex-wrap: wrap;
 }
 
+#why-not h2 {
+    margin-bottom: 0;
+}
+
 #why-not p {
     margin: 1rem;
     font-size: 1.2rem;
     font-weight: 700;
     color: black;
     padding: .3rem;
-    
 }
 
 #why-not-container {
